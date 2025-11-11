@@ -1,5 +1,5 @@
 ---
-title: "HashiCorp Certified: Terraform Associate 2025"
+title: "Terraform Associate 2025: Complete 5-Week Study Guide (Week 1 - Introduction & Exam Overview)"
 date: 2025-11-11 00:00:00 +/-0000
 categories: [Terraform]
 tags: [terraform, cert, hashicorp]     # TAG names should always be lowercase
