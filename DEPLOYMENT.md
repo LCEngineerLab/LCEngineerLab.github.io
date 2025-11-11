@@ -34,8 +34,11 @@ git add .
 # Create initial commit
 git commit -m "Initial commit: Jekyll Chirpy blog setup"
 
-# Add the remote repository (replace with your actual username if different)
-git remote add origin https://github.com/LCEngineerLab/LCEngineerLab.github.io.git
+# Add the remote repository (using SSH - already configured for LCEngineerLab account)
+# If you need to set it up, use:
+# git remote add origin git@github.com-LCEngineerLab:LCEngineerLab/LCEngineerLab.github.io.git
+# Or if using HTTPS:
+# git remote add origin https://github.com/LCEngineerLab/LCEngineerLab.github.io.git
 
 # Push to GitHub
 git branch -M main
