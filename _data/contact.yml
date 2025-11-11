@@ -6,9 +6,13 @@
 # - type: twitter
 #   icon: "fa-brands fa-x-twitter"
 
+- type: medium
+  icon: "fab fa-medium"
+  url: 'https://medium.com/@LCEngineerLab'
+
 - type: email
   icon: "fas fa-envelope"
-  url: 'andyretajeff@gmail.com'
+  url: 'yuxian12070908@gmail.com'
   noblank: true # open link in current tab
 
 # - type: rss
