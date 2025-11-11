@@ -1,0 +1,98 @@
+<!-- Switch Container -->
+<div class="switch-container">
+  <span class="lang-label">EN</span>
+  
+  <!-- Switch Button -->
+  <label class="switch">
+    <input type="checkbox" id="langSwitch">
+    <span class="slider round"></span>
+  </label>
+  
+  <span class="lang-label">CH</span>
+</div>
+
+<script>
+document.getElementById('langSwitch').addEventListener('change', function () {
+  const isChinese = this.checked === 'true';
+  if (this.checked === true) {
+    document.getElementById('lang-en').style.display = "none";
+    document.getElementById('lang-ch').style.display = "block";
+  } else {
+    document.getElementById('lang-en').style.display = "block";
+    document.getElementById('lang-ch').style.display = "none";
+  }
+  
+});
+
+</script>
+
+<!-- Styling for the switch -->
+<style>
+/* Parent container styling */
+.switch-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align the switch to the right */
+  gap: 8px; /* Add space between the labels and the switch */
+}
+
+/* Language labels styling */
+.lang-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Styling for the switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.switch input {
+  display: none;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+input:checked + .slider {
+  background-color: #616365;
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+#lang-en {
+  display: block;
+}
+#lang-ch {
+  display: none;
+}
+
+
+</style>
