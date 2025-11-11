@@ -3,6 +3,7 @@ title: "Terraform Associate 2025: Complete 5-Week Study Guide (Week 1 - Introduc
 date: 2025-11-11 00:00:00 +/-0000
 categories: [Certification Journey]
 tags: [terraform, hashicorp, iac, devops, infra]     # TAG names should always be lowercase
+excerpt: "Start your journey to HashiCorp Terraform Associate certification with this comprehensive 5-week study guide. Learn exam format, registration process, study resources, and a structured preparation plan for Week 1."
 ---
 
 {% include languge_switch.html %}

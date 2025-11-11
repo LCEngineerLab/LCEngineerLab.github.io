@@ -3,6 +3,7 @@ title: "Understanding Crypto Exchanges, Leverage Trading, and AI Trading Platfor
 date: 2025-11-11 00:00:00 +/-0000
 categories: [Technology Insights]
 tags: [blockchain, bitcoin, ai agent, trading]     # TAG names should always be lowercase
+excerpt: "Explore cryptocurrency exchanges (CEX vs DEX), leverage trading mechanics, and AI-powered trading platforms like Hyperliquid and Aster. Understand the differences between spot and perpetual futures trading."
 ---
 
 {% include languge_switch.html %}
