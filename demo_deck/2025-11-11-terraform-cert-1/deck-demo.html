@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terraform Associate 2025: Week 1 Study Guide</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/white.css" id="theme">
+    
+    <style>
+        /* Base font size reduction */
+        .reveal {
+            font-size: 24px;
+        }
+        .reveal .slides section {
+            text-align: left;
+            padding: 10px 35px;
+            height: 100%;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        .reveal .slides section * {
+            max-width: 100%;
+        }
+        .reveal h1 {
+            color: #623CE4;
+            font-weight: bold;
+            font-size: 1.8em;
+            margin-bottom: 0.2em;
+            margin-top: 0.2em;
+        }
+        .reveal h2 {
+            color: #623CE4;
+            font-weight: bold;
+            font-size: 1.3em;
+            margin-bottom: 0.3em;
+            margin-top: 0.2em;
+        }
+        .reveal h3 {
+            color: #623CE4;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-top: 0.3em;
+            margin-bottom: 0.2em;
+        }
+        .reveal p {
+            font-size: 0.8em;
+            line-height: 1.3;
+            margin-bottom: 0.3em;
+        }
+        .reveal .title-slide {
+            text-align: center;
+        }
+        .reveal .title-slide h1 {
+            font-size: 2em;
+            margin-bottom: 0.2em;
+        }
+        .reveal .title-slide .subtitle {
+            font-size: 1em;
+            color: #666;
+            margin-top: 0.3em;
+        }
+        .reveal ul {
+            margin-left: 1em;
+            font-size: 0.75em;
+        }
+        .reveal li {
+            margin-bottom: 0.2em;
+            line-height: 1.2;
+        }
+        .reveal .highlight {
+            color: #623CE4;
+            font-weight: bold;
+        }
+        .reveal .exam-details {
+            background: #f5f5f5;
+            padding: 0.5em;
+            border-radius: 6px;
+            margin: 0.3em 0;
+            font-size: 0.75em;
+        }
+        .reveal .exam-details p {
+            margin-bottom: 0.2em;
+        }
+        .reveal .exam-details strong {
+            color: #623CE4;
+        }
+        .reveal .topic-list {
+            font-size: 0.7em;
+        }
+        .reveal .topic-list li {
+            margin-bottom: 0.15em;
+        }
+        .reveal .action-items {
+            background: #e8f5e9;
+            padding: 0.5em;
+            border-radius: 6px;
+            border-left: 4px solid #4caf50;
+            font-size: 0.75em;
+        }
+        .reveal .action-items h3 {
+            font-size: 0.9em;
+            margin-bottom: 0.2em;
+        }
+        .reveal .action-items ul {
+            margin-top: 0.2em;
+        }
+        .reveal .resource-box {
+            background: #e3f2fd;
+            padding: 0.4em;
+            border-radius: 6px;
+            margin: 0.3em 0;
+            font-size: 0.7em;
+        }
+        .reveal .resource-box p {
+            margin-bottom: 0.2em;
+        }
+        .reveal .week-plan {
+            background: #fff3e0;
+            padding: 0.4em;
+            border-radius: 6px;
+            margin: 0.3em 0;
+            font-size: 0.7em;
+        }
+        .reveal .week-plan p {
+            margin-bottom: 0.15em;
+        }
+        .reveal code {
+            background: #f4f4f4;
+            padding: 0.15em 0.3em;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        .reveal a {
+            font-size: 0.9em;
+        }
+        .reveal img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .reveal .slide-image {
+            margin: 0.3em 0;
+            text-align: center;
+        }
+        .reveal .slide-image img {
+            max-height: 150px;
+        }
+        .reveal .title-logo {
+            max-width: 120px;
+            margin: 0 auto 0.5em;
+            display: block;
+        }
+        .reveal .icon-image {
+            width: 40px;
+            height: 40px;
+            float: left;
+            margin-right: 10px;
+            margin-top: 3px;
+        }
+        .reveal .two-column {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 15px;
+            align-items: start;
+        }
+        .reveal .cert-badge {
+            max-width: 150px;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Title Slide -->
+            <section class="title-slide">
+                <img src="https://www.terraform.io/assets/images/og-image-8b3e4f7d.png" alt="Terraform Logo" class="title-logo">
+                <h1>Terraform Associate 2025</h1>
+                <h2>5-Week Study Guide</h2>
+                <p class="subtitle">Week 1: Introduction & Exam Overview</p>
+                <p style="margin-top: 1em; color: #666; font-size: 0.9em;">HashiCorp Certified</p>
+            </section>
+
+            <!-- Introduction -->
+            <section>
+                <h2>Introduction</h2>
+                <p>Welcome to our <span class="highlight">5-week series</span> preparing for Terraform Associate 2025 certification!</p>
+                
+                <h3>This series covers:</h3>
+                <ul>
+                    <li><strong>Exam key points</strong> - Essential knowledge to pass</li>
+                    <li><strong>Practical examples</strong> - Real-world scenarios</li>
+                    <li><strong>Module design</strong> - Best practices for reusable modules</li>
+                </ul>
+            </section>
+
+            <!-- What is Terraform Associate Certification -->
+            <section>
+                <h2>What is Terraform Associate Certification?</h2>
+                <p>Validates knowledge of core Terraform concepts and skills for production use.</p>
+                
+                <h3>Demonstrates ability to:</h3>
+                <ul>
+                    <li>Understand infrastructure as code (IaC)</li>
+                    <li>Write and maintain Terraform configurations</li>
+                    <li>Manage Terraform state</li>
+                    <li>Work with Terraform modules</li>
+                    <li>Understand workflows and best practices</li>
+                </ul>
+                <p style="margin-top: 0.3em; color: #666; font-size: 0.75em;"><em>Highly valued in DevOps and cloud engineering</em></p>
+            </section>
+
+            <!-- Exam Format -->
+            <section>
+                <h2>Exam Format</h2>
+                <div class="exam-details">
+                    <p><strong>Duration:</strong> 1 hour (60 minutes)</p>
+                    <p><strong>Questions:</strong> ~57 (Multiple choice & select)</p>
+                    <p><strong>Passing Score:</strong> 70% or higher</p>
+                    <p><strong>Language:</strong> English</p>
+                    <p><strong>Cost:</strong> ~$70.50 USD</p>
+                    <p><strong>Format:</strong> Proctored online exam</p>
+                </div>
+            </section>
+
+            <!-- Exam Topics -->
+            <section>
+                <h2>Exam Topics (9 Domains)</h2>
+                <ul class="topic-list">
+                    <li><strong>IaC concepts</strong> (15-20%)</li>
+                    <li><strong>Terraform's purpose</strong> (10-15%)</li>
+                    <li><strong>Terraform basics</strong> (20-25%)</li>
+                    <li><strong>Terraform CLI</strong> (15-20%)</li>
+                    <li><strong>Terraform modules</strong> (15-20%)</li>
+                    <li><strong>Terraform workflow</strong> (15-20%)</li>
+                    <li><strong>State management</strong> (10-15%)</li>
+                    <li><strong>Configuration management</strong> (15-20%)</li>
+                    <li><strong>Terraform Cloud/Enterprise</strong> (5-10%)</li>
+                </ul>
+            </section>
+
+            <!-- Registration Process -->
+            <section>
+                <h2>Registration: Step 1</h2>
+                <h3>Create HashiCorp Account</h3>
+                <ul>
+                    <li>Visit <a href="https://www.hashicorp.com/certification/terraform-associate" target="_blank">HashiCorp Certification Portal</a></li>
+                    <li>Click "Get Started" or "Register for Exam"</li>
+                    <li>Create or sign in to HashiCorp account</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Registration: Step 2</h2>
+                <h3>Schedule Your Exam</h3>
+                <ul>
+                    <li>Navigate to Terraform Associate page</li>
+                    <li>Click "Schedule Exam"</li>
+                    <li>Redirected to PSI platform</li>
+                    <li>Create PSI account if needed</li>
+                    <li>Select exam date and time</li>
+                    <li>Complete payment</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Registration: Step 3</h2>
+                <h3>Prepare for Exam Day</h3>
+                <ul>
+                    <li><strong>System:</strong> Stable internet, webcam, quiet environment</li>
+                    <li><strong>ID:</strong> Valid government-issued ID</li>
+                    <li><strong>Environment:</strong> Proctoring software verifies before exam</li>
+                    <li><strong>No Notes:</strong> Cannot use external resources</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Registration: Step 4</h2>
+                <h3>Take the Exam</h3>
+                <ul>
+                    <li>Log in 15 minutes before scheduled time</li>
+                    <li>Complete system check and verification</li>
+                    <li>Exam begins after verification</li>
+                    <li>Results immediately after completion</li>
+                </ul>
+            </section>
+
+            <!-- Learning Resources -->
+            <section>
+                <h2>Learning Resources</h2>
+                <h3>Official Resources</h3>
+                <div class="resource-box">
+                    <p><strong>1. HashiCorp Learn</strong> (Free) - <a href="https://learn.hashicorp.com/terraform" target="_blank">learn.hashicorp.com/terraform</a></p>
+                    <p>Tutorials and hands-on labs</p>
+                </div>
+                <div class="resource-box">
+                    <p><strong>2. Terraform Docs</strong> - <a href="https://www.terraform.io/docs" target="_blank">terraform.io/docs</a></p>
+                    <p>Official documentation</p>
+                </div>
+                <div class="resource-box">
+                    <p><strong>3. Exam Review Guide</strong> - HashiCorp certification page</p>
+                    <p>Use as study checklist</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Learning Resources (cont.)</h2>
+                <h3>Practice Resources</h3>
+                <ul>
+                    <li><strong>Terraform Cloud Free Tier</strong> - Remote state practice</li>
+                    <li><strong>Practice Exams</strong> - Third-party (verify quality)</li>
+                    <li><strong>Hands-on</strong> - Free AWS/GCP/Azure account</li>
+                </ul>
+                
+                <h3>Study Communities</h3>
+                <ul>
+                    <li>HashiCorp Community Forum</li>
+                    <li>Reddit r/Terraform</li>
+                    <li>Study Groups</li>
+                </ul>
+            </section>
+
+            <!-- 5-Week Study Plan -->
+            <section>
+                <h2>5-Week Study Plan</h2>
+                <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin: 0.5em 0;">
+                    <div style="text-align: center; padding: 0.3em; background: #fff3e0; border-radius: 6px;">
+                        <div style="font-size: 1.5em; font-weight: bold; color: #623CE4;">1</div>
+                        <div style="font-size: 0.65em;">Intro</div>
+                    </div>
+                    <div style="text-align: center; padding: 0.3em; background: #fff3e0; border-radius: 6px;">
+                        <div style="font-size: 1.5em; font-weight: bold; color: #623CE4;">2</div>
+                        <div style="font-size: 0.65em;">Syntax</div>
+                    </div>
+                    <div style="text-align: center; padding: 0.3em; background: #fff3e0; border-radius: 6px;">
+                        <div style="font-size: 1.5em; font-weight: bold; color: #623CE4;">3</div>
+                        <div style="font-size: 0.65em;">State</div>
+                    </div>
+                    <div style="text-align: center; padding: 0.3em; background: #fff3e0; border-radius: 6px;">
+                        <div style="font-size: 1.5em; font-weight: bold; color: #623CE4;">4</div>
+                        <div style="font-size: 0.65em;">Modules</div>
+                    </div>
+                    <div style="text-align: center; padding: 0.3em; background: #fff3e0; border-radius: 6px;">
+                        <div style="font-size: 1.5em; font-weight: bold; color: #623CE4;">5</div>
+                        <div style="font-size: 0.65em;">Practice</div>
+                    </div>
+                </div>
+                <div class="week-plan">
+                    <p><strong>Week 1:</strong> Introduction & Exam Overview</p>
+                </div>
+                <div class="week-plan">
+                    <p><strong>Week 2:</strong> Basic Syntax & Workflow - <code>resource</code>, <code>module</code>, <code>provider</code>, <code>plan/apply</code></p>
+                </div>
+                <div class="week-plan">
+                    <p><strong>Week 3:</strong> State Management - State files, S3 + DynamoDB</p>
+                </div>
+                <div class="week-plan">
+                    <p><strong>Week 4:</strong> Module Development - Reusable design, inputs/outputs</p>
+                </div>
+                <div class="week-plan">
+                    <p><strong>Week 5:</strong> Exam Practice - Question analysis, mock exams, strategies</p>
+                </div>
+            </section>
+
+            <!-- Next Steps -->
+            <section>
+                <h2>Next Steps</h2>
+                <p>Time to start your preparation journey!</p>
+                
+                <div class="action-items">
+                    <h3>Action Items This Week:</h3>
+                    <ul>
+                        <li>✅ Create HashiCorp account</li>
+                        <li>✅ Review exam objectives</li>
+                        <li>✅ Set up Terraform locally</li>
+                        <li>✅ Explore HashiCorp Learn</li>
+                        <li>✅ Schedule exam (optional)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Conclusion -->
+            <section>
+                <h2>Conclusion</h2>
+                <p>Terraform Associate certification helps you:</p>
+                <ul>
+                    <li>Validate infrastructure as code skills</li>
+                    <li>Advance career in DevOps and cloud engineering</li>
+                </ul>
+                
+                <p style="margin-top: 0.3em;">With proper preparation using these resources and study plan, you'll be well-equipped to pass.</p>
+                
+                <p style="margin-top: 0.5em; color: #623CE4; font-weight: bold; font-size: 0.85em;">Next week: Terraform basic syntax and workflow fundamentals!</p>
+            </section>
+
+            <!-- Thank You -->
+            <section class="title-slide">
+                <h1>Thank You!</h1>
+                <p class="subtitle">Good luck with your certification journey!</p>
+                <p style="margin-top: 0.8em; color: #666; font-size: 0.9em;">Questions?</p>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            controls: true,
+            progress: true,
+            center: false,
+            transition: 'slide',
+            backgroundTransition: 'fade',
+            width: 960,
+            height: 700,
+            margin: 0.1
+        });
+    </script>
+</body>
+</html>
